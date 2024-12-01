@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/card";
 
 import { GithubIcon, GoogleIcon } from "./icons";
-import { BrainCircuit } from "lucide-react";
+import { BrainCircuit, Brain } from "lucide-react";
 
 export default function LoginForm() {
   const handleGoogleSignIn = () => {
