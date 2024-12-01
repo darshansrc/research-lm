@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { generateRandomName } from "@/utils";
 import { ArrowRight, Loader, PlusCircle } from "lucide-react";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { toast } from "sonner";
 
@@ -21,6 +22,7 @@ export function NewResearchBook() {
   const [open, setOpen] = React.useState(false);
   const [name, setName] = React.useState(generateRandomName());
   const [description, setDescription] = React.useState("");
+  const router = useRouter();
   const handleCreateNewResearchBook = async () => {
     console.log("handleCreateNewResearchBook");
     setLoading(true);
@@ -33,6 +35,7 @@ export function NewResearchBook() {
       setOpen(false);
       setName(generateRandomName());
       setDescription("");
+      router.push(`/note/${assistantId}`);
     }
     setLoading(false);
   };

@@ -25,6 +25,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { deleteResearchBook, updateResearchBook } from "@/actions";
 import { toast } from "sonner";
+import { useRouter } from "next/navigation";
 
 interface ResearchBook {
   id: string;
@@ -39,6 +40,7 @@ export function ResearchBookCard({ book }: { book: ResearchBook }) {
   const [isLoading, setIsLoading] = useState(false);
   const [editName, setEditName] = useState(book.name);
   const [editDescription, setEditDescription] = useState(book.description);
+  const router = useRouter();
 
   const gradientStyle = {
     background: generateGradient(book.name),
@@ -86,6 +88,7 @@ export function ResearchBookCard({ book }: { book: ResearchBook }) {
             <Button
               variant="secondary"
               className="border dark:border-neutral-700"
+              onClick={() => router.push(`/note/${book.id}`)}
             >
               Open
             </Button>
