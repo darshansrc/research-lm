@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description: 'Analyze data, take notes, and create diagrams with AI-powered assistance.',
     images: [
       {
-        url: 'https://your-domain.com/opengraph-image.png', // This will use the OG image we created
+        url: 'https://research-lm.vercel.app/opengraph-image',
         width: 1200,
         height: 630,
         alt: 'ResearchLM - Your Research Assistant',
@@ -49,6 +49,7 @@ export const metadata: Metadata = {
     title: 'ResearchLM | AI-Powered Research Assistant',
     description: 'Analyze data, take notes, and create diagrams with AI-powered assistance.',
     creator: '@darshansrc',
+    images: ['https://research-lm.vercel.app/opengraph-image'],
   },
   robots: {
     index: true,
