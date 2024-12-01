@@ -31,7 +31,7 @@ export default function LoginForm() {
   };
 
   return (
-    <Card className="w-[350px] bg-transparent border-none shadow-none">
+    <Card className="w-[350px] z-[500] bg-transparent border-none shadow-none">
       <CardHeader>
         <div>
         <CardTitle className="flex pb-2 flex-row items-center gap-2 ">
