@@ -50,7 +50,7 @@ export default function LoginForm() {
           <Button
             variant="outline"
             disabled={isGoogleLoading}
-            className="w-full bg-muted/40"
+            className="w-full bg-neutral-50 dark:bg-neutral-900"
             onClick={handleGoogleSignIn}
           >
             {
@@ -65,7 +65,7 @@ export default function LoginForm() {
           <Button
             variant="outline"
             disabled={isGithubLoading}
-            className="w-full  bg-muted/40"
+            className="w-full  bg-neutral-50 dark:bg-neutral-900"
             onClick={handleGithubSignIn}
           >
             {
